@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("https://sportsjob.com.br/wp-content/uploads/2020/11/futebol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    backdrop-filter: blur(7px);
+}
+ 
+nav {
+    position: relative;
+    background: #00000000;
+    margin: 20;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav:after {
+    content: ' ';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 650px;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: auto;
+    font-size:  12px;
+    padding: 8px 20px;
+    transition: 0.5s ease-in;
+    white-space: nowrap; 
+}
+
+nav ul li a span {
+    font-size: 0.8em;
+}
+
+nav ul li a:hover {
+    color: #0a4e08;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #33ff00,
+        0 0 5px #33ff00,
+        0 0 5px #33ff00;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
