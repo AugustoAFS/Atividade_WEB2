@@ -1,7 +1,7 @@
 <?php
 class Database {
     private $host = "localhost";
-    private $db_name = "atletas_db";
+    private $db_name = "atletas_web2";
     private $username = "root";
     private $password = "";
     public $conn;

@@ -1,6 +1,6 @@
-CREATE DATABASE atletas_db;
+CREATE DATABASE atletas_web2;
 
-USE atletas_db;
+USE atletas_web2;
 
 CREATE TABLE atletas (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -12,4 +12,3 @@ CREATE TABLE atletas (
     modalidades VARCHAR(255),
     foto_perfil VARCHAR(255)
 );
-select * from atletas;
