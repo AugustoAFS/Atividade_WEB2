@@ -34,8 +34,6 @@ $atletas = $atleta->read();
         <div class="row justify-content-center">
             <div class="col-md-10" id="fundo">
                 <h2 class="text-center my-4">Lista de Atletas</h2>
-                
-                <!-- Mensagens de feedback -->
                 <?php
                 if (isset($_GET['msg'])) {
                     if ($_GET['msg'] == 'deleted') {
