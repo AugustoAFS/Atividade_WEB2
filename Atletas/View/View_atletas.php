@@ -34,6 +34,18 @@ $atletas = $atleta->read();
         <div class="row justify-content-center">
             <div class="col-md-10" id="fundo">
                 <h2 class="text-center my-4">Lista de Atletas</h2>
+                
+                <!-- Mensagens de feedback -->
+                <?php
+                if (isset($_GET['msg'])) {
+                    if ($_GET['msg'] == 'deleted') {
+                        echo '<div class="alert alert-success" role="alert">Atleta deletado com sucesso!</div>';
+                    } elseif ($_GET['msg'] == 'error') {
+                        echo '<div class="alert alert-danger" role="alert">Ocorreu um erro ao tentar deletar o atleta.</div>';
+                    }
+                }
+                ?>
+                
                 <table class="table table-striped" id="Table">
                     <thead>
                         <tr>

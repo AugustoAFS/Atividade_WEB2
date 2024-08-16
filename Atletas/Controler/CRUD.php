@@ -51,7 +51,6 @@ class Atleta {
             echo "Read by ID error: " . $e->getMessage();
         }
     }
-    
 
     // Update
     public function update($id, $nome, $instituicao, $rg, $matricula, $sexo, $modalidades, $foto_perfil) {

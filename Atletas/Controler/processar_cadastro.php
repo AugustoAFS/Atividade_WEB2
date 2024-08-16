@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Insere os dados no banco de dados
                 if ($atleta->create($nome, $instituicao, $rg, $matricula, $sexo, $modalidades, $foto_perfil)) {
-                    header("Location: ");
+                    header("Location: ../View/View_atletas.php");
                 } else {
                     echo "Erro ao criar o registro.";
                 }
