@@ -12,5 +12,5 @@ Bem-vindo ao sistema de cadastro de atletas, um projeto desenvolvido em PHP util
 ## 🛠️ Tecnologias Utilizadas-**Bootstrap**: Framework do CSS.
 ## 🛠️ Tecnologias Utilizadas-**PHP**: Linguagem de programação utilizada para o desenvolvimento do backend.
 -**PDO (PHP Data Objects)**: Abstração de acesso ao banco de dados.<br>
--**MySQL**: Banco de dados relacional utilizado para armazenar os dados dos atletas.<br>
+-**MySQL**: Banco de dados para armazenar os dados dos atletas.<br>
 -**HTML/CSS**: Para a estrutura e estilo da interface.<br>
