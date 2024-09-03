@@ -106,7 +106,7 @@ atleta --< atleta_modalidade >-- modalidade
 
 2. **Acesse a aplicação:**
 
-   Abra o navegador e navegue até `http://localhost/projeto-atletas`.
+   Abra o navegador e navegue até `http://localhost/The_Athlete_Network/index.php`.
 
 ## 🤝 Contribuição
 
