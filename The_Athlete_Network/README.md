@@ -79,7 +79,7 @@ atleta --< atleta_modalidade >-- modalidade
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/********/projeto-atletas.git
+   git clone https://github.com/AugustoAFS/Atividade_de_WEB2.git
    ```
 
 2. **Importe o banco de dados:**
