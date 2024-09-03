@@ -1,0 +1,63 @@
+/* Certifique-se de que o contêiner da tabela é responsivo */
+.table-responsive {
+    overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+    -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos móveis */
+    margin: 20px;
+}
+
+/* Estilos adicionais para a tabela */
+.table {
+    width: 100%; /* Faz com que a tabela ocupe toda a largura do contêiner */
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-collapse: collapse; /* Remove o espaçamento entre células */
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 12px;
+    word-wrap: break-word; /* Quebra palavras longas para caber nas células */
+}
+
+.table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    border-bottom: 2px solid #007bff;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+}
+
+/* Ajustes para dispositivos menores */
+@media (max-width: 992px) {
+    .table th, .table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table th, .table td {
+        font-size: 10px;
+        padding: 4px;
+    }
+}

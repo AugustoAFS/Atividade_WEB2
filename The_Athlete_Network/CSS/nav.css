@@ -1,0 +1,205 @@
+/* Reset e estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Fundo responsivo com desfoque */
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://sportsjob.com.br/wp-content/uploads/2020/11/futebol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: blur(7px);
+}
+
+/* Estilo para o conteúdo principal */
+.content-container {
+    position: relative;
+    z-index: 1; /* Coloca o conteúdo acima do fundo desfocado */
+}
+
+/* Estilo para a barra de navegação normal em telas grandes e médias */
+nav {
+    position: relative;
+    background: transparent;
+    margin: 20px 0;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav:after {
+    content: ' ';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    line-height: auto;
+    font-size: 16px; /* Ajustado para tamanho de texto mais legível */
+    padding: 8px 20px;
+    transition: 0.5s ease-in;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    color: #0a4e08;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #33ff00, 0 0 5px #33ff00, 0 0 5px #33ff00;
+}
+
+.img-perfil {
+    border-radius: 50%;
+    border: 3px solid #007bff00;
+    transition: transform 0.3s;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.img-perfil:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para a barra de navegação lateral */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.608);
+    z-index: 1050;
+    transition: margin-left 0.3s;
+    margin-left: -250px;
+    color: white;
+}
+
+#sidebar.open {
+    margin-left: 0;
+}
+
+#sidebar .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#sidebar .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1100;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: left;
+}
+
+#sidebar ul li a:hover {
+    background: #007bff;
+    border-radius: 4px;
+}
+
+/* Estilo do botão hamburguer */
+#sidebarCollapse {
+    z-index: 1100;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    display: block;
+}
+
+/* Ajuste para o conteúdo principal */
+#content {
+    transition: margin-left 0.3s;
+}
+
+#sidebar.open ~ #content {
+    margin-left: 250px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    #sidebarCollapse {
+        display: none;
+    }
+    nav {
+        display: flex; /* Ajustado para usar flexbox e manter a disposição em linha */
+        background: transparent;
+        padding: 0; /* Remover padding para alinhamento correto */
+        margin: 20px 0;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Ajusta alinhamento dos itens no menu */
+    }
+    nav ul li {
+        margin: 0 15px; /* Ajustado para espaçamento mais compacto */
+    }
+}
