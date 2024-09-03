@@ -1,5 +1,5 @@
 
-# 🏅 Projeto de Cadastro de Atletas
+# 🏅 The Athlete Network
 
 ![Badge](https://img.shields.io/badge/IFPR-TADS-green) ![PHP](https://img.shields.io/badge/PHP-7.4-blue) ![MySQL](https://img.shields.io/badge/MySQL-5.7-blue) ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)
 
