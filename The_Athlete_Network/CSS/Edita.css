@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("https://sportsjob.com.br/wp-content/uploads/2020/11/futebol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    backdrop-filter: blur(7px);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.img-perfil {
+    border-radius: 50%;
+    border: 3px solid #007bff00;
+    transition: transform 0.3s;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.img-perfil:hover {
+    transform: scale(1.1);
+}
+
+#fundo {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+form {
+    padding: 20px;
+}
+
+input[type="text"], input[type="number"], select, .form-check {
+    margin-bottom: 10px;
+}
+
+#destaque, #card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+}
+
+#img_atl {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+#apresentacao {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #fundo {
+        margin-top: 10px;
+    }
+
+    .form-control, .form-select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .img-perfil {
+        width: 40px;
+        height: 40px;
+    }
+
+    #img_atl {
+        max-width: 100px;
+    }
+}
