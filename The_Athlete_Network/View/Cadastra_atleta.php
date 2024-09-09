@@ -10,7 +10,7 @@
     <title>Atletas</title>
 </head>
 <body>
-<div class="background-blur"></div> <!-- Adiciona a div para o fundo com blur -->
+<div class="background-blur"></div> 
 <div class="container">
     <header> 
         <nav class="navbar navbar-expand"> 

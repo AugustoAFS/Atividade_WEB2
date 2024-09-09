@@ -143,7 +143,7 @@ if (isset($_GET['id'])) {
                     <div class="mb-3">
                         <label class="form-label">Modalidades:</label>
                         <?php
-                        $modalidadesDisponiveis = ['Basquete', 'Futebol de campo', 'Futsal', 'Handebol', 'Tênis de mesa', 'Vôlei', 'Vôlei de praia', 'Xadrez'];
+                        $modalidadesDisponiveis = ['Basquete', 'Futebol de campo', 'Futsal', 'Handebol', 'Tenis de mesa', 'Volei', 'Volei de praia', 'Xadrez'];
                         foreach ($modalidadesDisponiveis as $modalidade) {
                             $checked = in_array($modalidade, $athlete['modalidades']) ? 'checked' : '';
                             echo '<div class="form-check">';
